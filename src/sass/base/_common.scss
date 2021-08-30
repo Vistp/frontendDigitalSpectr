@@ -1,0 +1,75 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.modal {
+  width: 481px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 31px;
+  padding: 40px;
+  background-color: #f7f5f9;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+
+  &__title {
+    margin: 0;
+    color: $title-text-color;
+    font-size: 24px;
+    line-height: 0.83;
+    font-family: $main-font;
+  }
+}
+
+.form__field {
+  width: 401px;
+  height: 48px;
+  margin-top: 25px;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-bottom: 14px;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  border: 1px solid #fff;
+
+  transition: border-color 300ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $active-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $primary-text-color;
+    font-family: $main-font;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+}
+
+.form__button {
+  width: 401px;
+  height: 48px;
+  margin-top: 25px;
+  padding: 13px 116px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: $accent-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: background-color 300ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+  }
+}
